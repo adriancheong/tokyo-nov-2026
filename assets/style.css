@@ -142,6 +142,66 @@ a {
 }
 .base p { margin: .45rem 0 0; }
 
+/* ── flights ─────────────────────────────────────────────── */
+
+.flights { margin-bottom: 2rem; }
+
+.flights h2 {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--rule-firm);
+}
+
+.flight-rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem 2rem;
+}
+
+.flight {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0 1rem;
+  align-items: start;
+}
+
+.flight-code {
+  font-family: var(--display);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--indigo);
+}
+.flight-code span {
+  display: block;
+  font-family: var(--text);
+  font-size: .75rem;
+  font-weight: 400;
+  color: var(--ink-faint);
+  letter-spacing: .03em;
+}
+
+.flight-detail strong {
+  font-family: var(--display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  display: block;
+}
+.flight-times {
+  margin: .2rem 0 0;
+  font-family: var(--display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.flight-date {
+  margin: .1rem 0 0;
+  font-size: .8125rem;
+  color: var(--ink-faint);
+}
+
 /* ── the two fixed bookings ──────────────────────────────── */
 
 .locked {
@@ -364,6 +424,8 @@ a {
 .status.tbc::before { background: none; border: 1.5px dashed currentColor; }
 .status.free   { color: var(--ink-faint); }
 .status.free::before { background: none; border: 1px solid currentColor; opacity: .6; }
+.status.travel { color: var(--indigo); }
+.status.travel::before { border-radius: 0; transform: rotate(45deg); width: .45rem; height: .45rem; }
 
 /* menu block */
 .menu {

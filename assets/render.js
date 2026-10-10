@@ -37,6 +37,7 @@
     walkin: "Just turn up",
     tbc: "Being arranged",
     free: "Nothing planned",
+    travel: "Travel",
   };
 
   function statusMark(status) {
@@ -59,6 +60,32 @@
     if (b.tel) baseHtml += "<p>" + telLink(b.tel) + "</p>";
     if (b.note) baseHtml += "<p>" + esc(b.note) + "</p>";
     set("base", baseHtml);
+  }
+
+  /* ── flights ──────────────────────────────────────────── */
+
+  if (TRIP.flights && TRIP.flights.length) {
+    set(
+      "flights-rows",
+      TRIP.flights
+        .map(function (f) {
+          return (
+            '<div class="flight">' +
+            '<div class="flight-code">' + esc(f.code) +
+              '<span>' + esc(f.dir) + "</span></div>" +
+            '<div class="flight-detail">' +
+              "<strong>" + esc(f.route) + "</strong>" +
+              '<p class="flight-times">' +
+                esc(f.depart) + " &rarr; " + esc(f.arrive) +
+              "</p>" +
+              '<p class="flight-date">' + esc(f.date) + "</p>" +
+            "</div></div>"
+          );
+        })
+        .join("")
+    );
+  } else {
+    document.getElementById("flights").hidden = true;
   }
 
   /* ── the fixed bookings ───────────────────────────────── */

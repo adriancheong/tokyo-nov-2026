@@ -11,7 +11,11 @@
 
 **Base:** Aloft by Marriott Tokyo Ginza, 6-14-3 Ginza, Chuo-ku · Tel 03-6278-8122
 **Party:** 4 · **Budget:** ~SGD 100 (¥12,400) per head
-**Out:** Sat 14 Nov, flight 16:40 HND
+
+| | | |
+|---|---|---|
+| **SQ634** | Sat 7 Nov | SIN 14:05 → HND 21:40 |
+| **SQ633** | Sat 14 Nov | HND 16:40 → SIN 23:25 |
 
 ---
 
@@ -20,7 +24,31 @@
 | When | What |
 |---|---|
 | **12 Oct** | Book **Yakitori Bird Land** via Google Maps (confirmed working) |
-| No deadline | **Yoshizawa** — decide walk-in vs ¥8,000pp course |
+| **Before flying** | Visit Japan Web registration — speeds up immigration |
+| **By 6 Nov** | Rangetsu free-cancellation deadline passes; after that, phone the restaurant |
+| No deadline | **Yoshizawa** — decide walk-in vs ¥8,000pp course (recommendation: walk in) |
+
+---
+
+## Airport transfer
+
+**Higashi-Ginza ↔ Haneda Terminal 3 — direct, no changes, 31 min, ¥547 IC**
+
+Keikyu Airport Line through-runs onto the Toei Asakusa Line at Sengakuji, so it's
+one train the whole way. Higashi-Ginza is 4 min walk from the hotel.
+
+**Arriving (Sat 7, lands 21:40)**
+- Platform is in the basement of Terminal 3, signposted from arrivals.
+- Board anything showing **Higashi-Ginza / Asakusa / Oshiage / Narita**. Trains
+  terminating at **Shinagawa** stop short — you'd have to change.
+- Last train 23:48, so ~2 hours of slack after a 21:40 landing.
+- Taxi is ¥8,000–10,000 and barely faster, plus 20% surcharge after 22:00.
+
+**Leaving (Sat 14, flight 16:40)**
+- Leave the hotel **13:00**, 13:15 at the very latest. Puts us at T3 ~13:45,
+  just under 3 hours before departure.
+- Check out in the morning and leave bags with the front desk so Tsukiji is
+  unencumbered.
 
 ---
 
@@ -145,7 +173,8 @@ Go 11:30 or after 13:30 to dodge the office lunch rush.
 10 min walk from the hotel. **BRING CASH.**
 Thins out fast after 09:00. Done by noon.
 
-**Leave hotel ~13:15** for HND. Flight 16:40.
+**Leave hotel 13:00** (13:15 at the latest) → Higashi-Ginza → HND T3, 31 min.
+**SQ633 departs 16:40**, lands Singapore 23:25.
 
 ---
 
@@ -187,6 +216,8 @@ Displaces that night's walk-in dinner. Tuesday is the easiest to give up.
 
 ## Notes
 
+- **Suica or Pasmo** for all four — grab at the airport or add to phone before flying. Works on every barrier and at most konbini.
+- **Carry cash.** Sometarō and most Tsukiji stalls are cash-only.
 - All prices JPY, **per person**. Verify at booking — Japanese restaurant prices have risen recently.
 - Cancellation in Japan is strict: often 100% same-day, ~50% the day before.
 - Every Google Maps booking route except Bird Land pushed toward a pricier product than the walk-in. Google surfaces what the platform monetises.

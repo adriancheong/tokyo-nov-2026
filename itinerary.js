@@ -16,10 +16,29 @@
 
 const TRIP = {
   city: "Tokyo",
-  dates: "8–14 November 2026",
+  dates: "7–14 November 2026",
   standfirst:
-    "Seven days, four of us, built around lunch. Two lunches are booked and timed — " +
+    "Seven nights, four of us, built around lunch. Two lunches are booked and timed — " +
     "miss those and they're gone. Everything else we decide on the day.",
+
+  flights: [
+    {
+      dir: "Out",
+      code: "SQ634",
+      route: "Singapore to Haneda",
+      date: "Saturday 7 November",
+      depart: "14:05",
+      arrive: "21:40",
+    },
+    {
+      dir: "Back",
+      code: "SQ633",
+      route: "Haneda to Singapore",
+      date: "Saturday 14 November",
+      depart: "16:40",
+      arrive: "23:25",
+    },
+  ],
 
   base: {
     name: "Aloft Tokyo Ginza",
@@ -45,6 +64,48 @@ const TRIP = {
   ],
 
   days: [
+    /* ── SATURDAY — ARRIVAL ─────────────────────────────────── */
+    {
+      dow: "Saturday",
+      date: "7",
+      month: "Nov",
+      area: "Landing, and getting to Ginza",
+      meals: [
+        {
+          slot: "Arrive",
+          time: "21:40",
+          name: "SQ634 lands at Haneda",
+          dish: "Terminal 3",
+          status: "travel",
+          notes: [
+            "Clearing immigration and baggage on a Saturday night usually takes half an hour to an hour.",
+            "Filling in Visit Japan Web before flying gets you through immigration noticeably faster.",
+          ],
+        },
+        {
+          slot: "Then",
+          name: "Keikyu Airport Line to Higashi-Ginza",
+          dish: "Direct, no changes, 31 minutes",
+          status: "travel",
+          notes: [
+            "The platform is in the basement of Terminal 3, signposted from arrivals.",
+            "Board anything showing Higashi-Ginza, Asakusa, Oshiage or Narita as its destination — those run straight through onto the Toei Asakusa Line. Avoid trains terminating at Shinagawa unless you fancy changing.",
+            "¥547 each with an IC card. Last train of the night leaves at 23:48, so there's nearly two hours of slack.",
+            "Higashi-Ginza is four minutes' walk from the hotel.",
+          ],
+          why: "A taxi is about ¥8,000–10,000 and barely quicker, plus a 20% surcharge after 22:00.",
+        },
+        {
+          slot: "Evening",
+          name: "Nothing planned",
+          status: "free",
+          notes: [
+            "Late arrival. There's a konbini on every corner if anyone's hungry, and the hotel has a rooftop bar.",
+          ],
+        },
+      ],
+    },
+
     /* ── SUNDAY ─────────────────────────────────────────────── */
     {
       dow: "Sunday",
@@ -300,10 +361,23 @@ const TRIP = {
           ],
         },
         {
-          slot: "Departure",
-          name: "Leave the hotel around 13:15",
-          status: "free",
-          notes: ["Flight out of Haneda at 16:40."],
+          slot: "Then",
+          time: "Leave by 13:00",
+          name: "Higashi-Ginza to Haneda",
+          dish: "Same train back, direct, 31 minutes",
+          status: "travel",
+          notes: [
+            "Walk to Higashi-Ginza, take anything bound for Haneda Airport, stay on to Terminal 3. ¥547 each.",
+            "Leaving at 13:00 puts us at the terminal around 13:45, just under three hours before the flight. 13:15 is the latest I'd cut it with four people and luggage.",
+            "Check out and leave the bags with the front desk in the morning if we want the Tsukiji trip unencumbered.",
+          ],
+        },
+        {
+          slot: "Fly",
+          time: "16:40",
+          name: "SQ633 to Singapore",
+          dish: "Lands 23:25",
+          status: "travel",
         },
       ],
     },
@@ -348,6 +422,8 @@ const TRIP = {
   ],
 
   footnotes: [
+    "Get a Suica or Pasmo at the airport, or add one to your phone before flying — you tap through every barrier with it and it pays at most convenience stores too.",
+    "Carry cash. Sometarō and most of the Tsukiji stalls don't take cards, and plenty of smaller places still don't either.",
     "Prices are per person, in yen. Japanese restaurant prices have moved a good deal lately, so treat them as the right ballpark rather than gospel.",
     "Cancelling late in Japan is expensive — often the full amount on the day, about half the day before.",
     "Lunch is deliberate. The same kitchens charge somewhere between half and a fifth of their dinner prices at midday.",
