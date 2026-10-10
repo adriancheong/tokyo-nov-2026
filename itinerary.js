@@ -333,9 +333,23 @@ const TRIP = {
         },
         {
           slot: "Evening",
-          name: "Akihabara, wherever appeals",
-          status: "free",
-          notes: ["Nothing planned."],
+          time: "Seated 17:30",
+          name: "Yakitori Bird Land",
+          jp: "バードランド",
+          dish: "Yakitori omakase at a basement counter",
+          status: "tbc",
+          where: "Ginza 4-2-15, basement",
+          walk: "6 minutes from the hotel",
+          notes: [
+            "Pencilled in, not yet booked — the reservation goes in by Friday 16 October.",
+            "Hibiya line runs direct from Akihabara to Higashi-Ginza, six stops, and comes up four minutes from the hotel.",
+            "Seated by 17:30. The kitchen closes early and they pace the counter together.",
+          ],
+          why: "The last proper dinner of the trip, and a six-minute walk home afterwards.",
+          fallback: {
+            label: "If it doesn't come off",
+            text: "Akihabara has plenty for an unplanned evening, or there's always Yurakucho under the railway arches on the way back.",
+          },
         },
       ],
     },
@@ -383,20 +397,9 @@ const TRIP = {
     },
   ],
 
-  // Shown as a separate card after the week.
-  floating: {
-    name: "Yakitori Bird Land",
-    jp: "バードランド",
-    dish: "Yakitori omakase at a basement counter",
-    status: "tbc",
-    where: "Ginza 4-2-15, basement",
-    walk: "6 minutes from the hotel",
-    notes: [
-      "One evening, not yet fixed to a day.",
-      "Closed Sundays and Mondays, so it can only land on the Tuesday, Wednesday, Thursday or Friday.",
-      "Seated by 17:30 — the kitchen closes early.",
-    ],
-  },
+  // A card after the week, for anything not yet fixed to a day.
+  // Set to null to hide the section entirely.
+  floating: null,
 
   closures: [
     { name: "Sometarō", closed: "Tuesday, Wednesday. No Friday evening service." },
@@ -422,7 +425,8 @@ const TRIP = {
   ],
 
   footnotes: [
-    "Get a Suica or Pasmo at the airport, or add one to your phone before flying — you tap through every barrier with it and it pays at most convenience stores too.",
+    "Every journey on this trip is Tokyo Metro, Toei or Keikyu, all of which now take a contactless card tapped straight on the gate. No ticket, no queue. Nothing here needs a JR line, which is the one network that still doesn't accept cards.",
+    "Still worth having a Suica, on your phone or as a card — it pays at convenience stores, vending machines and station lockers, which a bank card won't always do.",
     "Carry cash. Sometarō and most of the Tsukiji stalls don't take cards, and plenty of smaller places still don't either.",
     "Prices are per person, in yen. Japanese restaurant prices have moved a good deal lately, so treat them as the right ballpark rather than gospel.",
     "Cancelling late in Japan is expensive — often the full amount on the day, about half the day before.",

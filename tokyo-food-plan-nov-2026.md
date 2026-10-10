@@ -23,7 +23,7 @@
 
 | When | What |
 |---|---|
-| **12 Oct** | Book **Yakitori Bird Land** via Google Maps (confirmed working) |
+| **By Fri 16 Oct** | Book **Yakitori Bird Land** for **Fri 13 Nov, seated 17:30** via Google Maps (confirmed working) |
 | **Before flying** | Visit Japan Web registration — speeds up immigration |
 | **By 6 Nov** | Rangetsu free-cancellation deadline passes; after that, phone the restaurant |
 | No deadline | **Yoshizawa** — decide walk-in vs ¥8,000pp course (recommendation: walk in) |
@@ -163,7 +163,18 @@ Historic soba, 10 min walk from Akihabara. Open till 20:30.
 Go 11:30 or after 13:30 to dodge the office lunch rush.
 **Closed Wednesdays** — has to be today.
 
-**DINNER · Akihabara, your pick** — walk in
+**DINNER · Yakitori Bird Land** ⚠️ **PENCILLED IN — book by Fri 16 Oct**
+Ginza 4-2-15 B1F, 6 min walk from hotel. **Seated 17:30**, kitchen closes early.
+Bookable via Google Maps (confirmed working).
+Akihabara → Higashi-Ginza: Hibiya line direct, 6 stops.
+
+*Why Friday:* Tue would cost Ponta Honke, which is shut Mon + Fri so it can't move.
+Wed would cost both Omoide Yokocho and the Konjiki ramen, and force leaving Shinjuku
+at 17:00. Thu works but pairs wagyu lunch with yakitori dinner — two premium meat
+counters in a day. Friday's soba lunch is the better run-up, the Hibiya line ride is
+shorter, and it's the last proper dinner of the trip.
+
+*Fallback if it doesn't come off:* Akihabara, or Yurakucho on the way back.
 
 ---
 
@@ -175,17 +186,6 @@ Thins out fast after 09:00. Done by noon.
 
 **Leave hotel 13:00** (13:15 at the latest) → Higashi-Ginza → HND T3, 31 min.
 **SQ633 departs 16:40**, lands Singapore 23:25.
-
----
-
-## 🔴 RESERVE — Yakitori Bird Land (one dinner, day TBC)
-
-Ginza 4-2-15, B1F. 6 min walk from hotel.
-✅ **Bookable via Google Maps** — confirmed working.
-**Book on 12 Oct.**
-**Closed Sun + Mon** → only Tue 10, Wed 11, Thu 12 or Fri 13.
-**Seat by 17:30** — kitchen closes early (22:00 Tue–Fri, 21:30 Sat).
-Displaces that night's walk-in dinner. Tuesday is the easiest to give up.
 
 ---
 
@@ -216,7 +216,8 @@ Displaces that night's walk-in dinner. Tuesday is the easiest to give up.
 
 ## Notes
 
-- **Suica or Pasmo** for all four — grab at the airport or add to phone before flying. Works on every barrier and at most konbini.
+- **Contactless cards work at the gates.** Tokyo Metro, Toei and Keikyu all take a tapped bank card — which covers every journey on this trip, including the airport transfer. JR is the one network that still doesn't, and nothing here needs JR.
+- **Suica still worth having** — on the phone or as a card. It pays at konbini, vending machines and lockers where a bank card won't.
 - **Carry cash.** Sometarō and most Tsukiji stalls are cash-only.
 - All prices JPY, **per person**. Verify at booking — Japanese restaurant prices have risen recently.
 - Cancellation in Japan is strict: often 100% same-day, ~50% the day before.
