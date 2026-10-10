@@ -24,6 +24,7 @@
 | When | What |
 |---|---|
 | **By Fri 16 Oct** | Book **Yakitori Bird Land** for **Fri 13 Nov, seated 17:30** via Google Maps (confirmed working) |
+| **Before 6 Nov** | **Fix the mobile number on the Ikyu booking** — it may not have gone in cleanly (no `+` accepted for +65). Free amendments close 6 Nov. Reservation no. + auth code are in the Ikyu email. Alternative: set the Aloft number 03-6278-8122 as the contact |
 | **Before flying** | Visit Japan Web registration — speeds up immigration |
 | **By 6 Nov** | Rangetsu free-cancellation deadline passes; after that, phone the restaurant |
 | No deadline | **Yoshizawa** — decide walk-in vs ¥8,000pp course (recommendation: walk in) |
@@ -77,7 +78,13 @@ Reservation number and auth code are in the Ikyu confirmation email, not here �
 7 min walk. English-speaking staff. Restaurant: **03-3567-1021**
 
 ⚠️ **ARRIVE BY 12:30** — over 30 min late is auto-cancelled.
-⚠️ **They may phone to confirm.** If they can't reach you, they may cancel. Make sure your number works on roaming, or give them the Aloft desk (03-6278-8122) as backup.
+⚠️ **They may phone to confirm, and can cancel if they can't reach you.**
+The number given at booking may be malformed (the form wouldn't take `+` for +65).
+**Primary fix:** amend it on Ikyu before 6 Nov while changes are still free, or set
+the Aloft desk number 03-6278-8122 as the contact.
+**Backstop:** ask the front desk at check-in on Sat night to ring Rangetsu in the
+morning. They answer from ~11:00, an hour before the 12:00 booking — and we're a
+7 min walk away, so there's time to sort anything out in person.
 Free cancellation online until **Fri 6 Nov**; after that phone the restaurant. Silent no-show = no charge, but they may refuse future bookings.
 Afternoon: Ginza line runs direct to Asakusa, ~17 min.
 

@@ -96,11 +96,12 @@ const TRIP = {
           why: "A taxi is about ¥8,000–10,000 and barely quicker, plus a 20% surcharge after 22:00.",
         },
         {
-          slot: "Evening",
-          name: "Nothing planned",
+          slot: "At check-in",
+          name: "Ask the desk about tomorrow's lunch",
           status: "free",
           notes: [
-            "Late arrival. There's a konbini on every corner if anyone's hungry, and the hotel has a rooftop bar.",
+            "The mobile number given to Ginza Rangetsu may not have gone in cleanly, so ask the front desk to ring them in the morning and confirm the 12:00 table for four. Leave the hotel's own number as the contact while you're at it.",
+            "Then nothing planned. There's a konbini on every corner if anyone's hungry, and the hotel has a rooftop bar.",
           ],
         },
       ],
@@ -125,7 +126,8 @@ const TRIP = {
           notes: [
             "A table is held for four. No course was pre-ordered and nothing has been paid — we choose at the table and settle there.",
             "Be there by 12:30. They release the table if we're more than 30 minutes late.",
-            "The restaurant may telephone beforehand to confirm.",
+            "The restaurant may telephone beforehand to confirm, and if they can't reach anyone they're entitled to cancel.",
+            "Ask the hotel front desk to ring them and confirm — Rangetsu answers from about 11:00, so it can be done while we're getting ready. Worth doing even if nothing has gone wrong.",
           ],
           menu: {
             label: "What to order",
