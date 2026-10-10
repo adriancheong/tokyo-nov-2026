@@ -401,6 +401,31 @@ a {
   color: var(--ink-faint);
 }
 
+/* map links — the restaurant name opens Google Maps */
+
+.maplink {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-firm);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.maplink:hover,
+.maplink:focus-visible {
+  text-decoration-color: var(--indigo);
+}
+
+.pin {
+  width: .68em;
+  height: .68em;
+  margin-left: .3em;
+  fill: var(--ink-faint);
+  vertical-align: baseline;
+  flex: none;
+}
+.maplink:hover .pin,
+.maplink:focus-visible .pin { fill: var(--indigo); }
+
 /* status mark */
 .status {
   display: inline-flex;

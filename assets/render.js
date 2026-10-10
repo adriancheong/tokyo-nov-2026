@@ -27,6 +27,28 @@
     return '<a href="tel:' + esc(digits) + '">' + esc(tel) + "</a>";
   }
 
+  /* A small pin, so it's obvious the name opens a map. */
+  var PIN =
+    '<svg class="pin" viewBox="0 0 16 16" aria-hidden="true" focusable="false">' +
+    '<path d="M8 1.2c-2.5 0-4.5 2-4.5 4.5 0 3.3 4.5 9.1 4.5 9.1s4.5-5.8 4.5-9.1' +
+    'c0-2.5-2-4.5-4.5-4.5zm0 6.3a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6z"/></svg>';
+
+  /* Google Maps deep link. The place id opens the business card — hours,
+     photos, a Directions button — rather than dropping a pin at a coordinate. */
+  function mapLink(placeId, label, inner) {
+    if (!placeId) return inner;
+    var href =
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(label) +
+      "&query_place_id=" +
+      encodeURIComponent(placeId);
+    return (
+      '<a class="maplink" href="' + esc(href) + '" target="_blank" rel="noopener"' +
+      ' aria-label="' + esc(label) + ', open in Google Maps">' +
+      inner + PIN + "</a>"
+    );
+  }
+
   function set(id, html) {
     var el = document.getElementById(id);
     if (el) el.innerHTML = html;
@@ -55,7 +77,7 @@
 
   if (TRIP.base) {
     var b = TRIP.base;
-    var baseHtml = "<strong>" + esc(b.name) + "</strong>";
+    var baseHtml = "<strong>" + mapLink(b.place, b.name, esc(b.name)) + "</strong>";
     if (b.address) baseHtml += esc(b.address);
     if (b.tel) baseHtml += "<p>" + telLink(b.tel) + "</p>";
     if (b.note) baseHtml += "<p>" + esc(b.note) + "</p>";
@@ -99,7 +121,8 @@
             '<div class="locked-row">' +
             '<div class="locked-when">' + esc(l.time) +
               "<span>" + esc(l.day) + "</span></div>" +
-            '<div class="locked-what"><strong>' + esc(l.name) + "</strong>" +
+            '<div class="locked-what"><strong>' +
+              mapLink(l.place, l.name, esc(l.name)) + "</strong>" +
               (l.note ? "<p>" + esc(l.note) + "</p>" : "") +
             "</div></div>"
           );
@@ -122,8 +145,8 @@
     h += statusMark(m.status);
     h += "</div>";
 
-    /* name */
-    h += "<h3>" + esc(m.name);
+    /* name — becomes a map link when the entry has a place id */
+    h += "<h3>" + mapLink(m.place, m.name, esc(m.name));
     if (m.stars) h += '<span class="stars">' + "★".repeat(m.stars) + "</span>";
     if (m.jp) h += '<span class="jp">' + esc(m.jp) + "</span>";
     h += "</h3>";

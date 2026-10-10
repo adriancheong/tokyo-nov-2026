@@ -42,6 +42,7 @@ const TRIP = {
 
   base: {
     name: "Aloft Tokyo Ginza",
+    place: "ChIJSQCshp-LGGARKX8-7Kd-Hjs",
     address: "6-14-3 Ginza, Chuo-ku",
     tel: "03-6278-8122",
     note: "Ginza and Higashi-Ginza stations are both a few minutes away. Every walking time below is from here.",
@@ -53,12 +54,14 @@ const TRIP = {
       day: "Sunday 8",
       time: "12:00",
       name: "Ginza Rangetsu",
+      place: "ChIJt-74JeSLGGARLR-R9cf8H7o",
       note: "Be there by 12:30 at the latest — the table is released after 30 minutes.",
     },
     {
       day: "Monday 9",
       time: "11:30",
       name: "Tempura Kondo",
+      place: "ChIJX2Mb_eWLGGARvhx7F4hr3FA",
       note: "Paid in advance. Nothing to settle on the day except drinks and extras.",
     },
   ],
@@ -75,6 +78,7 @@ const TRIP = {
           slot: "Arrive",
           time: "21:40",
           name: "SQ634 lands at Haneda",
+          place: "ChIJEzipOlRhGGAR3-3UwuMqAnI",
           dish: "Terminal 3",
           status: "travel",
           notes: [
@@ -85,6 +89,7 @@ const TRIP = {
         {
           slot: "Then",
           name: "Keikyu Airport Line to Higashi-Ginza",
+          place: "ChIJK2bxJueLGGARwHHeH52hGiM",
           dish: "Direct, no changes, 31 minutes",
           status: "travel",
           notes: [
@@ -118,6 +123,7 @@ const TRIP = {
           slot: "Lunch",
           time: "12:00",
           name: "Ginza Rangetsu",
+          place: "ChIJt-74JeSLGGARLR-R9cf8H7o",
           jp: "銀座らん月",
           dish: "Sukiyaki and shabu-shabu",
           status: "booked",
@@ -145,6 +151,7 @@ const TRIP = {
         {
           slot: "Evening",
           name: "Sometarō",
+          place: "ChIJR6VxAL-OGGARDytTRfiKddE",
           jp: "染太郎",
           dish: "Okonomiyaki you cook yourself",
           status: "walkin",
@@ -171,6 +178,7 @@ const TRIP = {
           slot: "Lunch",
           time: "11:30",
           name: "Tempura Kondo",
+          place: "ChIJX2Mb_eWLGGARvhx7F4hr3FA",
           jp: "てんぷら近藤",
           dish: "Tempura, two Michelin stars",
           status: "booked",
@@ -188,6 +196,7 @@ const TRIP = {
         {
           slot: "Evening",
           name: "Yurakucho yokocho",
+          place: "ChIJM_v5qe-LGGAR68d7A7lCGjg",
           dish: "Izakaya under the railway arches",
           status: "walkin",
           walk: "10 minutes from the hotel",
@@ -210,6 +219,7 @@ const TRIP = {
           slot: "Lunch",
           time: "Arrive 11:00",
           name: "Izuei Honten",
+          place: "ChIJDz-xgyCMGGARTTlkSDiqvr8",
           jp: "伊豆栄 本店",
           dish: "Unagi — grilled freshwater eel",
           status: "walkin",
@@ -229,6 +239,7 @@ const TRIP = {
         {
           slot: "Evening",
           name: "Ponta Honke",
+          place: "ChIJTYnOCaCOGGARjM8rCZP-tsA",
           jp: "ぽん多本家",
           dish: "Tonkatsu, serving since 1905",
           status: "walkin",
@@ -253,6 +264,7 @@ const TRIP = {
           slot: "Lunch",
           time: "Arrive 11:30",
           name: "Kappo Nakajima",
+          place: "ChIJi5oUHduMGGARtCDZOFfeJas",
           jp: "新宿割烹 中嶋",
           dish: "Sardines, a Michelin star",
           status: "walkin",
@@ -270,6 +282,7 @@ const TRIP = {
         {
           slot: "Evening",
           name: "Omoide Yokocho",
+          place: "ChIJP9eKBdeMGGAR0zzBXJNVj5A",
           dish: "Yakitori alley, or ramen nearby",
           status: "walkin",
           notes: [
@@ -291,6 +304,7 @@ const TRIP = {
           slot: "Lunch",
           time: "Arrive 11:30",
           name: "Yoshizawa, Meat Corner",
+          place: "ChIJSwkySuGLGGAR7d8pgQ6CbrU",
           jp: "銀座吉澤 肉処",
           dish: "A5 wagyu, from the butcher's own counter",
           status: "walkin",
@@ -323,6 +337,7 @@ const TRIP = {
         {
           slot: "Lunch",
           name: "Kanda Yabu Soba",
+          place: "ChIJX-yVohyMGGARUTdpnpXyQNQ",
           jp: "かんだやぶそば",
           dish: "Buckwheat soba, since 1880",
           status: "walkin",
@@ -337,6 +352,7 @@ const TRIP = {
           slot: "Evening",
           time: "Seated 17:30",
           name: "Yakitori Bird Land",
+          place: "ChIJVby9v-WLGGARQv0iDzabeGo",
           jp: "バードランド",
           dish: "Yakitori omakase at a basement counter",
           status: "tbc",
@@ -367,6 +383,7 @@ const TRIP = {
           slot: "Morning",
           time: "From 09:00",
           name: "Tsukiji Outer Market",
+          place: "ChIJW2cLzSGLGGARXAKXv6EkbqI",
           jp: "築地場外市場",
           dish: "Sashimi, grilled scallops, tamagoyaki, knives",
           status: "walkin",
@@ -380,6 +397,7 @@ const TRIP = {
           slot: "Then",
           time: "Leave by 13:00",
           name: "Higashi-Ginza to Haneda",
+          place: "ChIJEzipOlRhGGAR3-3UwuMqAnI",
           dish: "Same train back, direct, 31 minutes",
           status: "travel",
           notes: [
