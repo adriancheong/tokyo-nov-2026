@@ -18,7 +18,7 @@ const TRIP = {
   city: "Tokyo",
   dates: "7–14 November 2026",
   standfirst:
-    "Seven nights, four of us, built around lunch. Two lunches are booked and timed — " +
+    "Seven nights, four of us, built around lunch. Three meals are booked and timed — " +
     "miss those and they're gone. Everything else we decide on the day.",
 
   flights: [
@@ -63,6 +63,13 @@ const TRIP = {
       name: "Tempura Kondo",
       place: "ChIJX2Mb_eWLGGARvhx7F4hr3FA",
       note: "Paid in advance. Nothing to settle on the day except drinks and extras.",
+    },
+    {
+      day: "Friday 13",
+      time: "18:00",
+      name: "Yakitori Bird Land",
+      place: "ChIJVby9v-WLGGARQv0iDzabeGo",
+      note: "The one booked dinner. A basement counter, paced together, so don't be late.",
     },
   ],
 
@@ -349,25 +356,23 @@ const TRIP = {
           why: "Closed on Wednesdays, so Friday is the day for it.",
         },
         {
-          slot: "Evening",
-          time: "Seated 17:30",
+          slot: "Dinner",
+          time: "18:00",
           name: "Yakitori Bird Land",
           place: "ChIJVby9v-WLGGARQv0iDzabeGo",
           jp: "バードランド",
           dish: "Yakitori omakase at a basement counter",
-          status: "tbc",
-          where: "Ginza 4-2-15, basement",
+          status: "booked",
+          where: "Tsukamoto Sozan Building, basement, Ginza 4-2-15",
           walk: "6 minutes from the hotel",
+          tel: "03-5250-1081",
           notes: [
-            "Pencilled in, not yet booked — the reservation goes in by Friday 16 October.",
-            "Hibiya line runs direct from Akihabara to Higashi-Ginza, six stops, and comes up four minutes from the hotel.",
-            "Seated by 17:30. The kitchen closes early and they pace the counter together.",
+            "Table for four, booked through Reserve with Google.",
+            "It's genuinely hard to find — a basement under an ordinary office building with little signage. Look for the Tsukamoto Sozan Building and head down.",
+            "Hibiya line runs direct from Akihabara to Higashi-Ginza, six stops. Leave Akihabara by about 17:30.",
+            "The counter is paced together, so arriving late means missing courses.",
           ],
           why: "The last proper dinner of the trip, and a six-minute walk home afterwards.",
-          fallback: {
-            label: "If it doesn't come off",
-            text: "Akihabara has plenty for an unplanned evening, or there's always Yurakucho under the railway arches on the way back.",
-          },
         },
       ],
     },
@@ -442,6 +447,7 @@ const TRIP = {
     { name: "Ponta Honke", tel: "050-5492-8353" },
     { name: "Kappo Nakajima", tel: "03-3356-4534" },
     { name: "Yoshizawa", tel: "03-3542-2981" },
+    { name: "Yakitori Bird Land", tel: "03-5250-1081" },
   ],
 
   footnotes: [

@@ -23,7 +23,6 @@
 
 | When | What |
 |---|---|
-| **By Fri 16 Oct** | Book **Yakitori Bird Land** for **Fri 13 Nov, seated 17:30** via Google Maps (confirmed working) |
 | **Before 6 Nov** | **Fix the mobile number on the Ikyu booking** — it may not have gone in cleanly (no `+` accepted for +65). Free amendments close 6 Nov. Reservation no. + auth code are in the Ikyu email. Alternative: set the Aloft number 03-6278-8122 as the contact |
 | **Before flying** | Visit Japan Web registration — speeds up immigration |
 | **By 6 Nov** | Rangetsu free-cancellation deadline passes; after that, phone the restaurant |
@@ -62,10 +61,11 @@ one train the whole way. Higashi-Ginza is 4 min walk from the hotel.
 | Tue 10 | Ueno + Yanaka | Izuei Honten | Ponta Honke |
 | Wed 11 | Shinjuku | Kappo Nakajima ⭐ | Omoide Yokocho / Konjiki Hototogisu |
 | Thu 12 | Shibuya + Harajuku | Yoshizawa ⚠️ | Free — Shibuya |
-| Fri 13 | Akihabara | Kanda Yabu Soba | Free — Akihabara |
+| Fri 13 | Akihabara | Kanda Yabu Soba | **Yakitori Bird Land 18:00 ✅** |
 | Sat 14 | Fly home | Tsukiji Outer Market | — |
 
-**Reserve:** Yakitori Bird Land — one dinner, day TBC
+**All bookings are now in.** Rangetsu Sun 8 at 12:00, Kondo Mon 9 at 11:30,
+Bird Land Fri 13 at 18:00. Everything else is walk-in.
 
 ---
 
@@ -170,10 +170,13 @@ Historic soba, 10 min walk from Akihabara. Open till 20:30.
 Go 11:30 or after 13:30 to dodge the office lunch rush.
 **Closed Wednesdays** — has to be today.
 
-**DINNER · Yakitori Bird Land** ⚠️ **PENCILLED IN — book by Fri 16 Oct**
-Ginza 4-2-15 B1F, 6 min walk from hotel. **Seated 17:30**, kitchen closes early.
-Bookable via Google Maps (confirmed working).
-Akihabara → Higashi-Ginza: Hibiya line direct, 6 stops.
+**DINNER · Yakitori Bird Land — 18:00** ✅ **BOOKED & CONFIRMED**
+Booked 16 Oct via Reserve with Google (platform: inline). Table for 4.
+**Tsukamoto Sozan Building B1F, Ginza 4-2-15** · 6 min walk from hotel · 03-5250-1081
+Hard to find — unmarked basement under an ordinary office building.
+Akihabara → Higashi-Ginza: Hibiya line direct, 6 stops. Leave Akihabara ~17:30.
+Counter is paced together, so late arrival means missing courses.
+Cancellation: no fee stated, but cancel in advance if plans change.
 
 *Why Friday:* Tue would cost Ponta Honke, which is shut Mon + Fri so it can't move.
 Wed would cost both Omoide Yokocho and the Konjiki ramen, and force leaving Shinjuku
@@ -206,6 +209,8 @@ Thins out fast after 09:00. Done by noon.
 | Ponta Honke | 050-5492-8353 |
 | Kappo Nakajima | 03-3356-4534 |
 | Tempura Kondo | 03-5568-0923 |
+| Yakitori Bird Land | 03-5250-1081 |
+| Ginza Rangetsu | 03-3567-1021 |
 
 ## Closure quick-reference
 
