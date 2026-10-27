@@ -42,6 +42,47 @@ Each day is an object with a list of meals:
 | `walkin` | open green ring — just turn up |
 | `tbc` | dashed blue ring — being arranged |
 | `free` | faint ring — nothing planned |
+| `travel` | blue diamond — a journey, not a meal |
+
+### A day with two versions of itself
+
+A day can carry a `fork` instead of `meals`, which renders two complete
+alternatives side by side — two columns above 58rem, stacked below. Use it
+for a day nobody has decided yet. Wednesday 11 Nov is the live example.
+
+```js
+{
+  dow: "Wednesday", date: "11", month: "Nov",
+  area: "Shinjuku — or the coast at Kamakura",
+  fork: {
+    note: "Why this day is still open, and how to choose.",
+    options: [
+      {
+        lead: "Either",            // the small label above the title
+        title: "Shinjuku",
+        sub: "As first planned",
+        gist: "One paragraph making the case.",
+        cautionLabel: "The trade", // defaults to "The catch"
+        caution: "What this option costs you.",
+        meals: [ /* ordinary meal objects */ ],
+        tally: [
+          { label: "Trains, return", value: "¥400 ≈ S$3" },
+          { label: "A head", value: "¥4,400–5,900 ≈ S$36–48", sum: true }
+        ]
+      },
+      { lead: "Or", title: "Kamakura", /* ... */ }
+    ]
+  }
+}
+```
+
+Both options are given deliberately equal visual weight, and each carries its
+own `caution`, so the page doesn't quietly argue for one of them. `tally` rows
+marked `sum: true` get a rule above and bold type. Meal objects inside a fork
+are identical to those anywhere else — they just render one heading level down.
+
+Once the choice is made, replace the whole `fork` with a plain `meals` array
+and the day renders like any other.
 
 Every field except `name` is optional. Omit one and that line simply doesn't
 render. The optional extras are `jp` (Japanese name), `dish`, `where`, `walk`,

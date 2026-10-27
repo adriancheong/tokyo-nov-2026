@@ -135,7 +135,11 @@
 
   /* ── one meal ─────────────────────────────────────────── */
 
-  function renderMeal(m) {
+  /* `hl` is the heading level for the name — 3 normally, 4 when the
+     meal sits inside a forked day, so the outline stays in order.
+     Never pass this straight to .map(), which would hand it an index. */
+  function renderMeal(m, hl) {
+    var H = hl === 4 ? "h4" : "h3";
     var h = '<article class="meal">';
 
     /* time / slot / status */
@@ -146,10 +150,10 @@
     h += "</div>";
 
     /* name — becomes a map link when the entry has a place id */
-    h += "<h3>" + mapLink(m.place, m.name, esc(m.name));
+    h += "<" + H + ">" + mapLink(m.place, m.name, esc(m.name));
     if (m.stars) h += '<span class="stars">' + "★".repeat(m.stars) + "</span>";
     if (m.jp) h += '<span class="jp">' + esc(m.jp) + "</span>";
-    h += "</h3>";
+    h += "</" + H + ">";
 
     if (m.dish) h += '<p class="dish">' + esc(m.dish) + "</p>";
 
@@ -197,13 +201,62 @@
     return h + "</article>";
   }
 
+  /* ── a day with two versions of itself ────────────────── */
+
+  /* Renders `day.fork` — two complete alternatives side by side,
+     deliberately given equal weight, because neither is decided. */
+  function renderFork(f) {
+    var h = '<div class="fork">';
+
+    if (f.note) h += '<p class="fork-note">' + esc(f.note) + "</p>";
+
+    h += '<div class="fork-grid">';
+    (f.options || []).forEach(function (o) {
+      h += '<section class="fork-opt">';
+
+      h += '<header class="fork-head">';
+      if (o.lead) h += '<p class="fork-lead">' + esc(o.lead) + "</p>";
+      h += "<h3>" + esc(o.title) + "</h3>";
+      if (o.sub) h += '<p class="fork-sub">' + esc(o.sub) + "</p>";
+      h += "</header>";
+
+      if (o.gist) h += '<p class="fork-gist">' + esc(o.gist) + "</p>";
+
+      /* The trade-off sits high, beside the other option's pitch —
+         it is the thing you need while comparing, not a footnote. */
+      if (o.caution) {
+        h += '<div class="fork-caution">' +
+               "<h4>" + esc(o.cautionLabel || "The catch") + "</h4>" +
+               "<p>" + esc(o.caution) + "</p></div>";
+      }
+
+      h += (o.meals || [])
+        .map(function (m) { return renderMeal(m, 4); })
+        .join("");
+
+      if (o.tally && o.tally.length) {
+        h += '<div class="tally"><h4>' + esc(o.tallyLabel || "Roughly what it costs") + "</h4><dl>";
+        o.tally.forEach(function (t) {
+          h += '<div class="row' + (t.sum ? " sum" : "") + '">' +
+                 "<dt>" + esc(t.label) + "</dt>" +
+                 "<dd>" + esc(t.value) + "</dd></div>";
+        });
+        h += "</dl></div>";
+      }
+
+      h += "</section>";
+    });
+
+    return h + "</div></div>";
+  }
+
   /* ── the week ─────────────────────────────────────────── */
 
   set(
     "week",
     (TRIP.days || [])
       .map(function (d) {
-        var h = '<section class="day">';
+        var h = '<section class="day' + (d.fork ? " day-split" : "") + '">';
         h += '<div class="day-mark" aria-hidden="true">' +
                '<span class="num">' + esc(d.date) + "</span>" +
                '<span class="mon">' + esc(d.month || "") + "</span></div>";
@@ -212,7 +265,9 @@
         if (d.area) h += '<p class="area">' + esc(d.area) + "</p>";
         if (d.aside) h += '<p class="aside">' + esc(d.aside) + "</p>";
         h += "</div>";
-        h += (d.meals || []).map(renderMeal).join("");
+        h += d.fork
+          ? renderFork(d.fork)
+          : (d.meals || []).map(function (m) { return renderMeal(m); }).join("");
         return h + "</div></section>";
       })
       .join("")

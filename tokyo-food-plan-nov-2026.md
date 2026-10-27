@@ -59,7 +59,7 @@ one train the whole way. Higashi-Ginza is 4 min walk from the hotel.
 | Sun 8 | Ginza, then Asakusa + Skytree | **Ginza Rangetsu 12:00 ✅** | Sometarō |
 | Mon 9 | Ginza + Nihonbashi | **Tempura Kondo ⭐⭐ 11:30 ✅** | Yurakucho yokocho |
 | Tue 10 | Ueno + Yanaka | Izuei Honten | Ponta Honke |
-| Wed 11 | Shinjuku | Kappo Nakajima ⭐ | Omoide Yokocho / Konjiki Hototogisu |
+| Wed 11 | **Shinjuku *or* Kamakura — undecided** | Kappo Nakajima ⭐ *or* shirasu at Wasai Yakura | Omoide Yokocho / Konjiki Hototogisu *or* free |
 | Thu 12 | Shibuya + Harajuku | Yoshizawa ⚠️ | Free — Shibuya |
 | Fri 13 | Akihabara | Kanda Yabu Soba | **Yakitori Bird Land 18:00 ✅** |
 | Sat 14 | Fly home | Tsukiji Outer Market | — |
@@ -138,7 +138,15 @@ Skip the fried prawn — market price, can top ¥4,000.
 
 ---
 
-## Wed 11 Nov — Shinjuku
+## Wed 11 Nov — Shinjuku *or* Kamakura — UNDECIDED
+
+The only day with **zero bookings**, so it is the only day that can be swapped
+wholesale without losing a table. Both versions are live on the site side by side
+(`fork` on the Wednesday day object) for the in-laws to pick. Decide the night before.
+
+Both land at roughly the same cost per head, so it is not a money question.
+
+### Either — Shinjuku (the original plan)
 
 **LUNCH · Kappo Nakajima ⭐** — walk in, **ARRIVE 11:30**
 One Michelin star. **Order the sardine sets, not the course** (course needs booking).
@@ -147,6 +155,42 @@ B1 Nichihara Bldg, 1 min from exit E9, Shinjuku-sanchome — direct Marunouchi l
 
 **DINNER · Omoide Yokocho** — walk in
 *or* **Konjiki Hototogisu** ramen ~¥1,500 — arrive 18:15 and take a ticket, service is only 18:30–21:00.
+
+Afternoon filler: Metropolitan Government Building observatory (45F, free, walk-in),
+Shinjuku Gyoen 10 min away.
+
+Per head ≈ ¥4,400–5,900 ≈ S$36–48.
+
+### Or — Kamakura (day trip)
+
+08:00 depart → Marunouchi 1 stop to Tokyo Stn → **JR Yokosuka line direct**.
+~75 min typical, allow 95. ¥950 ≈ S$7.70 each way (¥7,600 ≈ S$61 return for 4).
+**JR line — needs Suica, contactless credit card will NOT open the gates.**
+
+| Time | Stop | Cost | Hours |
+|---|---|---|---|
+| 09:30 | Tsurugaoka Hachiman-gu (up Komachi-dori) | free | 06:00–20:00 |
+| 11:00 | **Wasai Yakura** — shirasu, Komachi-dori 2F | ¥2,000–2,500 | opens 11:00 |
+| 12:30 | Enoden → Hase (2 stops, ~5 min) | ¥200–310/leg | — |
+| 12:45 | Kotoku-in 高徳院 — Great Buddha | ¥300 | 08:00–16:45 |
+| 13:45 | Hasedera 長谷寺 | ¥400 | 08:00–17:00 |
+| 15:00 | Enoden west — Kamakurakokomae, Enoshima | ¥200–310/leg | sunset **16:38** |
+
+Per head ≈ ¥5,100–5,800 ≈ S$41–47 before supper. Back in Tokyo ~18:30, dinner free.
+
+**Enoden ¥800 day pass does NOT pay** for this route (3 legs ≈ ¥720) — just tap Suica.
+
+**Swap option:** Hokokuji bamboo grove (¥400, matcha ¥600) *instead of* the coastal leg —
+opposite side of town from Hase and **shuts 16:00**, so it is one or the other.
+
+**Watch out:**
+- **Sometaro Kamakura is CLOSED WEDNESDAYS** — do not route to it on this day.
+- Raw shirasu depends on the morning catch; boiled (kama-age) always available.
+- Foliage doesn't peak until late Nov — going for coast + temples, not colour.
+
+**Cost of choosing Kamakura:** Shinjuku is nowhere else in the week, so it drops from
+the trip entirely — including Kappo Nakajima, the cheapest star of the week. Omoide
+Yokocho could move to Thu evening (1 stop from Shibuya); the starred lunch cannot.
 
 ---
 
@@ -180,7 +224,8 @@ Cancellation: no fee stated, but cancel in advance if plans change.
 
 *Why Friday:* Tue would cost Ponta Honke, which is shut Mon + Fri so it can't move.
 Wed would cost both Omoide Yokocho and the Konjiki ramen, and force leaving Shinjuku
-at 17:00. Thu works but pairs wagyu lunch with yakitori dinner — two premium meat
+at 17:00 — and if Wed turns into the Kamakura day trip it would have been flatly
+impossible, since that gets back around 18:30. Thu works but pairs wagyu lunch with yakitori dinner — two premium meat
 counters in a day. Friday's soba lunch is the better run-up, the Hibiya line ride is
 shorter, and it's the last proper dinner of the trip.
 

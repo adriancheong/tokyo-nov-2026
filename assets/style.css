@@ -334,7 +334,8 @@ a {
   color: var(--ink-faint);
 }
 
-.meal h3 {
+/* h3 normally, h4 inside a forked day — same look either way */
+.meal :is(h3, h4) {
   font-family: var(--display);
   font-size: 1.375rem;
   font-weight: 600;
@@ -342,14 +343,14 @@ a {
   line-height: 1.25;
   width: 100%;
 }
-.meal h3 .jp {
+.meal :is(h3, h4) .jp {
   font-size: .875rem;
   font-weight: 400;
   color: var(--ink-faint);
   margin-left: .6rem;
   white-space: nowrap;
 }
-.meal h3 .stars {
+.meal :is(h3, h4) .stars {
   color: var(--seal);
   font-size: .8125rem;
   margin-left: .4rem;
@@ -519,6 +520,147 @@ a {
   color: var(--ink-soft);
 }
 
+/* ── a day that forks ────────────────────────────────────────
+   Two complete versions of one day, set side by side and given
+   equal weight on purpose — nobody has chosen yet.
+   ─────────────────────────────────────────────────────────── */
+
+.fork-note {
+  max-width: var(--measure);
+  margin: 0 0 2rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--seal);
+  font-family: var(--display);
+  font-size: .9375rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.fork-grid {
+  display: grid;
+  gap: 3rem 0;
+}
+
+.fork-opt { min-width: 0; }
+
+.fork-head {
+  padding-bottom: .7rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--rule-firm);
+}
+.fork-lead {
+  margin: 0 0 .25rem;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--seal);
+}
+.fork-head h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.fork-sub {
+  margin: .25rem 0 0;
+  font-size: .875rem;
+  color: var(--ink-faint);
+}
+
+.fork-gist {
+  margin: 0 0 1.5rem;
+  font-size: .9375rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+/* meals sit one rung down inside a fork, so the eye reads the
+   option title first and the stops as its contents */
+.fork .meal { max-width: none; }
+.fork .meal :is(h3, h4) { font-size: 1.125rem; }
+
+/* ── the running cost of an option ───────────────────────── */
+
+.tally {
+  margin-top: 1.75rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--rule-firm);
+}
+.tally h4 {
+  margin: 0 0 .5rem;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.tally dl { margin: 0; }
+.tally .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .75rem;
+  padding: .3rem 0;
+  font-size: .875rem;
+}
+.tally dt { margin: 0; color: var(--ink-soft); }
+.tally dd {
+  margin: 0;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.tally .row.sum {
+  margin-top: .35rem;
+  padding-top: .55rem;
+  border-top: 1px dotted var(--rule);
+  font-weight: 700;
+}
+.tally .row.sum dt { color: var(--ink); }
+
+.fork-caution {
+  margin: 0 0 1.5rem;
+  padding: .1rem 0 .1rem .9rem;
+  border-left: 2px solid var(--seal);
+}
+.fork-caution h4 {
+  margin: 0 0 .2rem;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--seal);
+}
+.fork-caution p {
+  margin: 0;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: .875rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+/* side by side only once there is honestly room for two columns */
+@media (min-width: 58rem) {
+  .fork-grid { grid-template-columns: 1fr 1fr; }
+  .fork-opt:first-child { padding-right: 2rem; }
+  .fork-opt + .fork-opt {
+    padding-left: 2rem;
+    border-left: 1px solid var(--rule-firm);
+  }
+}
+
+/* stacked, the second option needs a firm edge or it reads as a
+   continuation of the first */
+@media (max-width: 57.99rem) {
+  .fork-opt + .fork-opt {
+    padding-top: 2.5rem;
+    border-top: 2px solid var(--rule-firm);
+  }
+}
+
 /* ── still to pin down ───────────────────────────────────── */
 
 .floating {
@@ -640,6 +782,13 @@ a {
   .day { page-break-inside: avoid; padding: 1rem 0; }
   .day-mark { position: static; }
   .meal { page-break-inside: avoid; }
+
+  /* a forked day runs to several pages — let it break, but keep
+     each option and each stop whole */
+  .day-split { page-break-inside: auto; }
+  .fork-opt { page-break-inside: auto; break-before: page; }
+  .fork-opt:first-child { break-before: auto; }
+  .fork-head, .tally { page-break-inside: avoid; }
   a { text-decoration: none; color: inherit; }
 }
 
