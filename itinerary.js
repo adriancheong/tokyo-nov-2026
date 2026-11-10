@@ -216,74 +216,99 @@ const TRIP = {
     },
 
     /* ── TUESDAY ──────────────────────────────────────────────
-       Swapped with Friday on the morning of the 10th. It rained
-       until 10:00 and stayed fully overcast all day, so the
-       indoor day moved here and the walking day moved to Friday.
-       Only the daytimes traded — both evenings stayed put.
+       Rebuilt around the midday break: out in the morning, back
+       to Ginza for lunch and a rest, out again after 16:30.
+       Shibuya by day, Akihabara once the neon is on.
        ──────────────────────────────────────────────────────── */
     {
       dow: "Tuesday",
       date: "10",
       month: "Nov",
-      area: "Akihabara",
-      aside: "Swapped with Friday. Akihabara is floor after floor of electronics under strip lighting and doesn't care what the sky is doing — which is the point today. Ueno Park and Yanaka are worth saving for better light.",
+      area: "Shibuya and Harajuku, then Akihabara after dark",
+      aside: "Two trips out with a rest in between. Lunch is back near the hotel on purpose, so nobody has to push through the afternoon.",
       meals: [
         {
+          slot: "Morning",
+          time: "From 10:00",
+          name: "Meiji Jingu",
+          place: "ChIJ5SZMmreMGGARcz8QSTiJyo8",
+          jp: "明治神宮",
+          dish: "A forest shrine, one minute from Harajuku station",
+          status: "walkin",
+          where: "Ginza line to Omotesando, or the Yamanote to Harajuku",
+          notes: [
+            "Free to enter. Open 06:10 to 16:10 — it shuts at dusk, so it has to be a morning.",
+            "Flat gravel paths, but it is a ten-minute walk through the trees from the gate to the shrine itself, and ten back.",
+            "The Inner Garden is ¥500 ≈ S$4 if anyone wants somewhere quiet to sit down.",
+          ],
+          why: "The calm half of the day before Takeshita-dori, which is the opposite of calm.",
+        },
+        {
+          slot: "Morning",
+          name: "Shibuya Scramble Crossing",
+          place: "ChIJK9EM68qLGGARacmu4KJj5SA",
+          dish: "Takeshita-dori and Omotesando on the way down",
+          status: "walkin",
+          notes: [
+            "Shibuya's indoor side is the wet-weather answer: Scramble Square, Hikarie, Parco, Mark City all connect without going outside.",
+            "The crossing itself only needs ten minutes, and it is better after dark anyway — so no loss today.",
+          ],
+        },
+        {
           slot: "Lunch",
-          time: "Arrive 11:30",
-          name: "Kanda Yabu Soba",
-          place: "ChIJX-yVohyMGGARUTdpnpXyQNQ",
-          jp: "かんだやぶそば",
-          dish: "Buckwheat soba, since 1880",
+          time: "Arrive 13:00",
+          name: "Yoshizawa, Meat Corner",
+          place: "ChIJSwkySuGLGGAR7d8pgQ6CbrU",
+          jp: "銀座吉澤 肉処",
+          dish: "A5 wagyu, from the butcher's own counter",
           status: "walkin",
-          where: "Ten minutes' walk from Akihabara",
+          where: "Second floor, Ginza 1-20-8",
+          walk: "8 minutes from the hotel",
+          tel: "03-3542-2981",
           notes: [
-            "Go at 11:30 or after 13:30 — the hour in between belongs to the local office crowd.",
-            "Open until 20:30.",
+            "Walk in for the beef set at around ¥2,990 ≈ S$24. Expect roughly fifteen minutes in the queue.",
+            "The restaurant is owned by a butcher, which is why the price is what it is.",
+            "Booking online is possible but only opens up ¥8,000 courses — four times the price for the same kitchen. Not worth it.",
           ],
-          why: "Closed Wednesdays, so Tuesday or Friday either way. It sits between Akihabara and Kanda, which makes it the natural lunch for this day.",
+          why: "It is back by the hotel, which is the point — eat, then go up and rest.",
         },
         {
-          slot: "Afternoon",
-          name: "Akihabara, indoors",
-          status: "walkin",
-          notes: [
-            "Yodobashi Camera is nine floors by itself. Add Radio Kaikan, the arcades, Super Potato for retro games and Mandarake and you can spend five hours here without going outside once.",
-            "Hibiya line runs direct from Higashi-Ginza to Akihabara, about ten minutes.",
-          ],
-          why: "Entirely indoors, which is the point on an overcast day.",
-        },
-        {
-          slot: "Dusk",
-          time: "From 16:35",
-          name: "Electric Town, lit",
-          status: "walkin",
-          notes: [
-            "Sunset is around 16:35, so the neon comes on while we're still here — no need to choose between the shops and the lights.",
-            "Today's cloud breaks up after 16:00 and the sky is forecast clear by 19:00, so it should be a good night for it.",
-            "Stay until about 17:30, then two stops on the Yamanote to Ueno for dinner.",
-          ],
-          fallback: {
-            label: "If we want more of it after dinner",
-            text:
-              "Ponta closes at 20:20 and Akihabara is five minutes back down the line. Yodobashi runs to 22:00, the arcades later, and Don Quijote never shuts — so a second pass after dinner is easy if anyone's still game.",
-          },
+          slot: "Rest",
+          time: "14:30 – 16:15",
+          name: "Back to the hotel",
+          status: "free",
+          notes: ["Nothing planned. The evening is a single train from the door."],
         },
         {
           slot: "Evening",
+          time: "From 16:35",
+          name: "Akihabara, lit",
+          status: "walkin",
+          where: "Hibiya line direct from Higashi-Ginza, about ten minutes",
+          notes: [
+            "Sunset is around 16:35, so the neon is on by the time we arrive. The cloud breaks after 16:00 and the sky is forecast clear by 19:00.",
+            "Yodobashi runs to 22:00, the arcades later, Don Quijote never closes.",
+          ],
+          why: "Akihabara is worth seeing after dark rather than in flat daylight — which is why it moved to the evening.",
+        },
+        {
+          slot: "Dinner",
           name: "Ponta Honke",
           place: "ChIJTYnOCaCOGGARjM8rCZP-tsA",
           jp: "ぽん多本家",
           dish: "Tonkatsu, serving since 1905",
           status: "walkin",
-          where: "Ueno",
-          walk: "Two stops from Akihabara on the Yamanote line, about five minutes",
+          where: "Ueno — two stops up the Yamanote from Akihabara, about five minutes",
           tel: "050-5492-8353",
           notes: [
-            "Usually about a ten-minute wait. Open until 20:20.",
-            "Skip the fried prawn — it's sold at market price and a single one can come to over ¥4,000.",
+            "Usually about a ten-minute wait. Open until 20:20, so go before the shops.",
+            "Skip the fried prawn — it's sold at market price and a single one can come to over ¥4,000 ≈ S$32.",
           ],
-          why: "Closed Mondays and Fridays, so Tuesday is one of only three evenings all week it can happen. That's why the swap moved the daytime and left this alone.",
+          why: "Closed Mondays and Fridays, so tonight is one of only three evenings left that it can happen.",
+          fallback: {
+            label: "Or stay in Akihabara",
+            text: "Kanda Yabu Soba is a ten-minute walk away and open until 20:30 — buckwheat soba since 1880, and no second train.",
+          },
         },
       ],
     },
@@ -503,81 +528,125 @@ const TRIP = {
       },
     },
 
-    /* ── THURSDAY ───────────────────────────────────────────── */
+    /* ── THURSDAY ─────────────────────────────────────────────
+       Took Ueno when Shibuya moved to Tuesday. Roppongi in the
+       evening for the Keyakizaka lights.
+       ──────────────────────────────────────────────────────── */
     {
       dow: "Thursday",
       date: "12",
       month: "Nov",
-      area: "Shibuya and Harajuku",
+      area: "Ueno Park and the museums, then Roppongi",
+      aside: "The best weather of the week — 17°C and partly cloudy — so this is the day for the park. Same shape: out, lunch, rest, out again.",
       meals: [
         {
-          slot: "Lunch",
-          time: "Arrive 11:30",
-          name: "Yoshizawa, Meat Corner",
-          place: "ChIJSwkySuGLGGAR7d8pgQ6CbrU",
-          jp: "銀座吉澤 肉処",
-          dish: "A5 wagyu, from the butcher's own counter",
+          slot: "Morning",
+          time: "From 10:00",
+          name: "Ueno Park",
+          place: "ChIJw2qQRZuOGGARWmROEiM2y7E",
+          jp: "上野恩賜公園",
+          dish: "The park, and the museums ringed around it",
           status: "walkin",
-          where: "Second floor, Ginza 1-20-8",
-          walk: "8 minutes from the hotel",
-          tel: "03-3542-2981",
+          where: "Hibiya line direct from Higashi-Ginza, about fifteen minutes",
           notes: [
-            "Walk in for the beef set at around ¥2,990. Expect roughly fifteen minutes in the queue.",
-            "The restaurant is owned by a butcher, which is why the price is what it is.",
-            "Booking online is possible but only opens up ¥8,000 courses — four times the price for the same kitchen. Not worth it.",
-            "Closed on Sundays.",
+            "Ueno Zoo is inside the park — ¥600 ≈ S$4.85 for adults, ¥300 ≈ S$2.40 for over-65s, open 09:30 to 17:00 with last entry at 16:00.",
+            "Shinobazu Pond and its lotus beds are a flat, easy loop if anyone wants the short version.",
           ],
         },
         {
-          slot: "Evening",
-          name: "Shibuya, wherever appeals",
-          status: "free",
-          notes: ["Nothing planned. Shibuya has more places to eat than anyone could work through."],
+          slot: "Morning",
+          name: "Tokyo National Museum",
+          place: "ChIJEX3XFIOOGGAR3XdJvRjWLyM",
+          jp: "東京国立博物館",
+          dish: "The oldest and largest museum in Japan",
+          status: "walkin",
+          notes: [
+            "Open 09:30 to 17:00 on Thursdays. Closed Mondays, which is why it could never have been the Monday.",
+            "Around ¥1,000 ≈ S$8. Two hours does it justice; one hour covers the Honkan, which is the main building and the best of it.",
+            "The National Museum of Nature and Science and the National Museum of Western Art are both a few minutes away if anyone wants a different one.",
+          ],
         },
-      ],
-    },
-
-    /* ── FRIDAY ───────────────────────────────────────────────
-       Swapped with Tuesday — see the note on the 10th.
-       ──────────────────────────────────────────────────────── */
-    {
-      dow: "Friday",
-      date: "13",
-      month: "Nov",
-      area: "Ueno Park and Yanaka",
-      aside: "The one proper walking day of the trip, moved here from Tuesday for the better weather. Park and museums in the morning, Yanaka's old streets in the afternoon, then straight down the Hibiya line to dinner.",
-      meals: [
         {
           slot: "Lunch",
-          time: "Arrive 11:00",
+          time: "Arrive 12:00",
           name: "Izuei Honten",
           place: "ChIJDz-xgyCMGGARTTlkSDiqvr8",
           jp: "伊豆栄 本店",
           dish: "Unagi — grilled freshwater eel",
           status: "walkin",
-          where: "Beside Shinobazu Pond, Ueno",
+          where: "Beside Shinobazu Pond, in the park",
           tel: "03-3831-0954",
           notes: [
-            "Three hundred years old, several floors, English menus. Around ¥4,000 for lunch.",
+            "Three hundred years old, several floors, English menus. Around ¥4,000 ≈ S$32 for lunch.",
             "Go in and take a ticket number at the podium rather than waiting outside — people miss this and queue needlessly.",
-            "Getting there at opening matters. The wait runs anywhere from 10 to 45 minutes depending purely on when you arrive.",
-            "They take bookings by telephone only, no online form.",
+            "The wait runs anywhere from 10 to 45 minutes depending purely on when you arrive.",
           ],
           fallback: {
             label: "If the queue looks bad",
-            text: "Two more Izuei branches sit within five minutes' walk, both open on Fridays — Shinobazu-tei at around ¥3,240, and Umekawa-tei at around ¥6,000 with park views and tatami seating. Same family, same recipe.",
+            text: "Two more Izuei branches sit within five minutes' walk, both open Thursdays — Shinobazu-tei at around ¥3,240, and Umekawa-tei at around ¥6,000 with park views and tatami seating. Same family, same recipe.",
           },
         },
         {
-          slot: "Afternoon",
-          name: "Ueno Park, the museums, then Yanaka",
+          slot: "Rest",
+          time: "14:30 – 16:30",
+          name: "Back to the hotel",
+          status: "free",
+          notes: ["Roppongi is ten minutes from the door on the Hibiya line, so there is no rush."],
+        },
+        {
+          slot: "Evening",
+          time: "From 17:00",
+          name: "Keyakizaka Illumination",
+          place: "ChIJ7Rjf0y2LGGARVVHPQ5hKaqc",
+          jp: "けやき坂イルミネーション",
+          dish: "Roppongi Hills Christmas lights",
           status: "walkin",
+          where: "Hibiya line direct from Higashi-Ginza to Roppongi, about ten minutes, then eight minutes on foot",
           notes: [
-            "The park is ringed by major museums, all a few minutes apart: the Tokyo National Museum, the National Museum of Nature and Science, and the National Museum of Western Art, which is a Le Corbusier building and a UNESCO site in its own right.",
-            "Ueno Zoo is inside the park too — ¥600 for adults and ¥300 for over-65s, open 09:30 to 17:00 with last entry at 16:00.",
-            "Yanaka is twenty minutes north on foot, or two stops on the Chiyoda line to Nezu. Old narrow streets and a shotengai of croquette and menchi-katsu stalls.",
+            "Free. Runs 5 November to 25 December, lit from 17:00 until late.",
+            "Blue-white lights the length of the slope with Tokyo Tower framed at the bottom — that view is the reason people come.",
+            "Weekday evenings are much calmer than weekends, and it is still early in the season.",
           ],
-          why: "Everything here is clustered, so it absorbs as much or as little time as the day allows.",
+          why: "The only major illumination already running while we're here. Tokyo Midtown doesn't start until 26 November and Omotesando not until December.",
+          fallback: {
+            label: "Dinner after",
+            text: "Nothing booked. Roppongi Hills itself is full of places, or come back down the Hibiya line and eat in Ginza.",
+          },
+        },
+      ],
+    },
+
+    /* ── FRIDAY ───────────────────────────────────────────────
+       Bird Land at 18:00 is the only fixed point left. The
+       daytime is deliberately light.
+       ──────────────────────────────────────────────────────── */
+    {
+      dow: "Friday",
+      date: "13",
+      month: "Nov",
+      area: "Yanaka, then Ginza",
+      aside: "The last full day, and the loosest. One booking at 18:00 and a six-minute walk home from it.",
+      meals: [
+        {
+          slot: "Morning",
+          name: "Yanaka",
+          status: "walkin",
+          where: "Chiyoda line to Nezu, or a twenty-minute walk north from Ueno",
+          notes: [
+            "Old narrow streets and Yanaka Ginza, a shotengai of croquette and menchi-katsu stalls — the one bit of low-rise, pre-war Tokyo left in easy reach.",
+            "Flat and short. An hour or two covers it.",
+          ],
+          fallback: {
+            label: "Or keep the morning free",
+            text: "Nothing here is load-bearing. If everyone would rather have a slow start before the last dinner, that is a perfectly good use of the day — or this is where Toyosu and teamLab Planets would go if we still want them.",
+          },
+        },
+        {
+          slot: "Rest",
+          time: "Afternoon",
+          name: "Back to the hotel",
+          status: "free",
+          notes: ["Bird Land is paced as a counter, so it is worth arriving unhurried."],
         },
         {
           slot: "Dinner",
@@ -593,10 +662,13 @@ const TRIP = {
           notes: [
             "Table for four, booked through Reserve with Google.",
             "It's genuinely hard to find — a basement under an ordinary office building with little signage. Look for the Tsukamoto Sozan Building and head down.",
-            "Hibiya line runs direct from Ueno to Higashi-Ginza, about fifteen minutes. Leave Ueno by 17:15 to be safe.",
             "The counter is paced together, so arriving late means missing courses.",
           ],
           why: "The last proper dinner of the trip, and a six-minute walk home afterwards.",
+          fallback: {
+            label: "Lights afterwards, if anyone has the legs",
+            text: "The Marunouchi illumination switches on 12 November and runs the length of Naka-dori — about ten minutes' walk from the restaurant, and on the way to nothing, which is rather the charm of it.",
+          },
         },
       ],
     },
