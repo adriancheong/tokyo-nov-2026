@@ -343,7 +343,7 @@ const TRIP = {
           fallback: {
             label: "Worth paying for the Green Car",
             text:
-              "Cars 4 and 5 on the Yokosuka line are double-decker Green Cars — reclining 2+2 seats, far more legroom, and quiet. About ¥1,000–1,300 ≈ S$8–11 each way per person. Buy it on the platform before boarding, not on board, where it costs more. Then tap your Suica on the reader in the ceiling above your seat and wait for the green light. On a day with no afternoon rest, two hours in a proper seat is the best money we'll spend.",
+              "Cars 4 and 5 on the Yokosuka line are double-decker Green Cars — reclining 2+2 seats, far more legroom, and quiet. ¥1,000 ≈ S$8 each way per person if the ticket goes onto an IC card, or ¥1,260 ≈ S$10 for a paper one. Suica, PASMO, Kitaca and TOICA all work, so Mum's PASMO is fine. Use a ticket machine showing the IC logo, choose Green Ticket, insert the card — buying a paper ticket, or buying from the attendant on board, costs ¥260 more either way. Then tap the reader in the ceiling above the seat and wait for the light to go red to green. On a day with no afternoon rest, two hours in a proper seat is the best money we will spend.",
           },
         },
         {
