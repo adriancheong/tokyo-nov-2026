@@ -215,32 +215,58 @@ const TRIP = {
       ],
     },
 
-    /* ── TUESDAY ────────────────────────────────────────────── */
+    /* ── TUESDAY ──────────────────────────────────────────────
+       Swapped with Friday on the morning of the 10th. It rained
+       until 10:00 and stayed fully overcast all day, so the
+       indoor day moved here and the walking day moved to Friday.
+       Only the daytimes traded — both evenings stayed put.
+       ──────────────────────────────────────────────────────── */
     {
       dow: "Tuesday",
       date: "10",
       month: "Nov",
-      area: "Ueno Park and Yanaka",
+      area: "Akihabara",
+      aside: "Swapped with Friday. Akihabara is floor after floor of electronics under strip lighting and doesn't care what the sky is doing — which is the point today. Ueno Park and Yanaka are worth saving for better light.",
       meals: [
         {
           slot: "Lunch",
-          time: "Arrive 11:00",
-          name: "Izuei Honten",
-          place: "ChIJDz-xgyCMGGARTTlkSDiqvr8",
-          jp: "伊豆栄 本店",
-          dish: "Unagi — grilled freshwater eel",
+          time: "Arrive 11:30",
+          name: "Kanda Yabu Soba",
+          place: "ChIJX-yVohyMGGARUTdpnpXyQNQ",
+          jp: "かんだやぶそば",
+          dish: "Buckwheat soba, since 1880",
           status: "walkin",
-          where: "Beside Shinobazu Pond, Ueno",
-          tel: "03-3831-0954",
+          where: "Ten minutes' walk from Akihabara",
           notes: [
-            "Three hundred years old, several floors, English menus. Around ¥4,000 for lunch.",
-            "Go in and take a ticket number at the podium rather than waiting outside — people miss this and queue needlessly.",
-            "Getting there at opening matters. The wait runs anywhere from 10 to 45 minutes depending purely on when you arrive.",
-            "They take bookings by telephone only, no online form.",
+            "Go at 11:30 or after 13:30 — the hour in between belongs to the local office crowd.",
+            "Open until 20:30.",
+          ],
+          why: "Closed Wednesdays, so Tuesday or Friday either way. It sits between Akihabara and Kanda, which makes it the natural lunch for this day.",
+        },
+        {
+          slot: "Afternoon",
+          name: "Akihabara, indoors",
+          status: "walkin",
+          notes: [
+            "Yodobashi Camera is nine floors by itself. Add Radio Kaikan, the arcades, Super Potato for retro games and Mandarake and you can spend five hours here without going outside once.",
+            "Hibiya line runs direct from Higashi-Ginza to Akihabara, about ten minutes.",
+          ],
+          why: "Entirely indoors, which is the point on an overcast day.",
+        },
+        {
+          slot: "Dusk",
+          time: "From 16:35",
+          name: "Electric Town, lit",
+          status: "walkin",
+          notes: [
+            "Sunset is around 16:35, so the neon comes on while we're still here — no need to choose between the shops and the lights.",
+            "Today's cloud breaks up after 16:00 and the sky is forecast clear by 19:00, so it should be a good night for it.",
+            "Stay until about 17:30, then two stops on the Yamanote to Ueno for dinner.",
           ],
           fallback: {
-            label: "If the queue looks bad",
-            text: "Two more Izuei branches sit within five minutes' walk, both open on Tuesdays — Shinobazu-tei at around ¥3,240, and Umekawa-tei at around ¥6,000 with park views and tatami seating. Same family, same recipe.",
+            label: "If we want more of it after dinner",
+            text:
+              "Ponta closes at 20:20 and Akihabara is five minutes back down the line. Yodobashi runs to 22:00, the arcades later, and Don Quijote never shuts — so a second pass after dinner is easy if anyone's still game.",
           },
         },
         {
@@ -251,11 +277,13 @@ const TRIP = {
           dish: "Tonkatsu, serving since 1905",
           status: "walkin",
           where: "Ueno",
+          walk: "Two stops from Akihabara on the Yamanote line, about five minutes",
           tel: "050-5492-8353",
           notes: [
             "Usually about a ten-minute wait. Open until 20:20.",
             "Skip the fried prawn — it's sold at market price and a single one can come to over ¥4,000.",
           ],
+          why: "Closed Mondays and Fridays, so Tuesday is one of only three evenings all week it can happen. That's why the swap moved the daytime and left this alone.",
         },
       ],
     },
@@ -509,26 +537,47 @@ const TRIP = {
       ],
     },
 
-    /* ── FRIDAY ─────────────────────────────────────────────── */
+    /* ── FRIDAY ───────────────────────────────────────────────
+       Swapped with Tuesday — see the note on the 10th.
+       ──────────────────────────────────────────────────────── */
     {
       dow: "Friday",
       date: "13",
       month: "Nov",
-      area: "Akihabara",
+      area: "Ueno Park and Yanaka",
+      aside: "The one proper walking day of the trip, moved here from Tuesday for the better weather. Park and museums in the morning, Yanaka's old streets in the afternoon, then straight down the Hibiya line to dinner.",
       meals: [
         {
           slot: "Lunch",
-          name: "Kanda Yabu Soba",
-          place: "ChIJX-yVohyMGGARUTdpnpXyQNQ",
-          jp: "かんだやぶそば",
-          dish: "Buckwheat soba, since 1880",
+          time: "Arrive 11:00",
+          name: "Izuei Honten",
+          place: "ChIJDz-xgyCMGGARTTlkSDiqvr8",
+          jp: "伊豆栄 本店",
+          dish: "Unagi — grilled freshwater eel",
           status: "walkin",
-          where: "Ten minutes' walk from Akihabara",
+          where: "Beside Shinobazu Pond, Ueno",
+          tel: "03-3831-0954",
           notes: [
-            "Go at 11:30 or after 13:30 — the hour in between belongs to the local office crowd.",
-            "Open until 20:30.",
+            "Three hundred years old, several floors, English menus. Around ¥4,000 for lunch.",
+            "Go in and take a ticket number at the podium rather than waiting outside — people miss this and queue needlessly.",
+            "Getting there at opening matters. The wait runs anywhere from 10 to 45 minutes depending purely on when you arrive.",
+            "They take bookings by telephone only, no online form.",
           ],
-          why: "Closed on Wednesdays, so Friday is the day for it.",
+          fallback: {
+            label: "If the queue looks bad",
+            text: "Two more Izuei branches sit within five minutes' walk, both open on Fridays — Shinobazu-tei at around ¥3,240, and Umekawa-tei at around ¥6,000 with park views and tatami seating. Same family, same recipe.",
+          },
+        },
+        {
+          slot: "Afternoon",
+          name: "Ueno Park, the museums, then Yanaka",
+          status: "walkin",
+          notes: [
+            "The park is ringed by major museums, all a few minutes apart: the Tokyo National Museum, the National Museum of Nature and Science, and the National Museum of Western Art, which is a Le Corbusier building and a UNESCO site in its own right.",
+            "Ueno Zoo is inside the park too — ¥600 for adults and ¥300 for over-65s, open 09:30 to 17:00 with last entry at 16:00.",
+            "Yanaka is twenty minutes north on foot, or two stops on the Chiyoda line to Nezu. Old narrow streets and a shotengai of croquette and menchi-katsu stalls.",
+          ],
+          why: "Everything here is clustered, so it absorbs as much or as little time as the day allows.",
         },
         {
           slot: "Dinner",
@@ -544,7 +593,7 @@ const TRIP = {
           notes: [
             "Table for four, booked through Reserve with Google.",
             "It's genuinely hard to find — a basement under an ordinary office building with little signage. Look for the Tsukamoto Sozan Building and head down.",
-            "Hibiya line runs direct from Akihabara to Higashi-Ginza, six stops. Leave Akihabara by about 17:30.",
+            "Hibiya line runs direct from Ueno to Higashi-Ginza, about fifteen minutes. Leave Ueno by 17:15 to be safe.",
             "The counter is paced together, so arriving late means missing courses.",
           ],
           why: "The last proper dinner of the trip, and a six-minute walk home afterwards.",

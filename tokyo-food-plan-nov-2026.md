@@ -58,10 +58,10 @@ one train the whole way. Higashi-Ginza is 4 min walk from the hotel.
 |---|---|---|---|
 | Sun 8 | Ginza, then Asakusa + Skytree | **Ginza Rangetsu 12:00 ✅** | Sometarō |
 | Mon 9 | Ginza + Nihonbashi | **Tempura Kondo ⭐⭐ 11:30 ✅** | Yurakucho yokocho |
-| Tue 10 | Ueno + Yanaka | Izuei Honten | Ponta Honke |
+| Tue 10 | **Akihabara** (swapped) | Kanda Yabu Soba | Ponta Honke |
 | Wed 11 | **Shinjuku *or* Kamakura — undecided** | Kappo Nakajima ⭐ *or* shirasu at Wasai Yakura | Omoide Yokocho / Konjiki Hototogisu *or* free |
 | Thu 12 | Shibuya + Harajuku | Yoshizawa ⚠️ | Free — Shibuya |
-| Fri 13 | Akihabara | Kanda Yabu Soba | **Yakitori Bird Land 18:00 ✅** |
+| Fri 13 | **Ueno + Yanaka** (swapped) | Izuei Honten | **Yakitori Bird Land 18:00 ✅** |
 | Sat 14 | Fly home | Tsukiji Outer Market | — |
 
 **All bookings are now in.** Rangetsu Sun 8 at 12:00, Kondo Mon 9 at 11:30,
@@ -119,7 +119,24 @@ Izakaya under the train tracks, 10 min walk. Cover charge ¥300–500pp at most 
 
 ---
 
-## Tue 10 Nov — Ueno Park + Yanaka
+## Tue 10 Nov — Akihabara  *(swapped with Fri 13 on the morning of the 10th)*
+
+**Why swapped:** rain until 10:00 and 100% cloud cover all day. Akihabara is
+indoors; Ueno Park and Yanaka are the only real walking day of the trip and
+were better saved for Friday's clearer weather.
+
+**Only the daytimes traded. Both evenings stayed put** — Ponta Honke is closed
+Mondays and Fridays so Tuesday is one of only three possible evenings, and
+Akihabara→Ueno is 2 stops on the Yamanote (~5 min). Bird Land stays Fri 18:00;
+Ueno→Higashi-Ginza is ~15 min on the Hibiya line.
+
+**Lunch:** Kanda Yabu Soba (closed Weds only; sits between Akihabara and Kanda).
+**Dusk:** sunset ~16:35, so the neon comes on before we leave for dinner.
+**Evening:** Ponta Honke, Ueno.
+
+---
+
+### Original Ueno content, now moved to Fri 13
 
 **LUNCH · Izuei Honten** — walk in, **ARRIVE 11:00 OPENING**
 300-year-old unagi house by Shinobazu Pond. English menu. ~¥4,000 avg lunch.
@@ -207,7 +224,11 @@ Ginza 1-20-8, 2F. 8 min walk. Closed Sundays. Butcher-owned beef.
 
 ---
 
-## Fri 13 Nov — Akihabara
+## Fri 13 Nov — Ueno Park + Yanaka  *(swapped with Tue 10)*
+
+Izuei Honten lunch (open every day), park + museums + Yanaka, then Bird Land 18:00.
+
+### Original Akihabara content, now moved to Tue 10
 
 **LUNCH · Kanda Yabu Soba** — walk in
 Historic soba, 10 min walk from Akihabara. Open till 20:30.
