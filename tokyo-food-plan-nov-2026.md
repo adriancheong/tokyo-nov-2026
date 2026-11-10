@@ -59,7 +59,7 @@ one train the whole way. Higashi-Ginza is 4 min walk from the hotel.
 | Sun 8 | Ginza, then Asakusa + Skytree | **Ginza Rangetsu 12:00 ✅** | Sometarō |
 | Mon 9 | Ginza + Nihonbashi | **Tempura Kondo ⭐⭐ 11:30 ✅** | Yurakucho yokocho |
 | Tue 10 | **Shibuya + Harajuku**, Akihabara pm | Yoshizawa (Ginza) | Ponta Honke |
-| Wed 11 | **Shinjuku *or* Kamakura — undecided** | Kappo Nakajima ⭐ *or* shirasu at Wasai Yakura | Omoide Yokocho / Konjiki Hototogisu *or* free |
+| Wed 11 | **KAMAKURA — decided** | Wasai Yakura (shirasu) | *free* |
 | Thu 12 | **Ueno + museums**, Roppongi pm | Izuei Honten | *free — Roppongi lights from 17:00* |
 | Fri 13 | **Yanaka** / free morning | *free* | **Yakitori Bird Land 18:00 ✅** |
 | Sat 14 | Fly home | Tsukiji Outer Market | — |
