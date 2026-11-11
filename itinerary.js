@@ -452,52 +452,48 @@ const TRIP = {
     },
 
     /* ── THURSDAY ─────────────────────────────────────────────
-       Took Ueno when Shibuya moved to Tuesday. Roppongi in the
-       evening for the Keyakizaka lights.
+       Yanaka and Ueno merged — they're one stop apart on the JR,
+       not a separate trip. Runs north to south so the day ends
+       at the station we leave from.
        ──────────────────────────────────────────────────────── */
     {
       dow: "Thursday",
       date: "12",
       month: "Nov",
-      area: "Ueno Park and the museums, then Roppongi",
-      aside: "The best weather of the week — 17°C and partly cloudy — so this is the day for the park. Same shape: out, lunch, rest, out again.",
+      area: "Yanaka and Ueno, then Roppongi",
+      aside: "18°C and dry — the best weather of the week, and both of these are outdoor. North to south with no backtracking, then home to rest before the lights.",
       meals: [
         {
-          slot: "Morning",
-          time: "From 10:00",
-          name: "Ueno Park",
-          place: "ChIJw2qQRZuOGGARWmROEiM2y7E",
-          jp: "上野恩賜公園",
-          dish: "The park, and the museums ringed around it",
-          status: "walkin",
-          where: "Hibiya line direct from Higashi-Ginza, about fifteen minutes",
+          slot: "Getting there",
+          time: "Leave 09:45",
+          name: "Ginza → Nippori",
+          status: "travel",
+          where: "Hibiya line to Ueno, then one stop on the JR Yamanote to Nippori",
           notes: [
-            "Ueno Zoo is inside the park — ¥600 ≈ S$4.85 for adults, ¥300 ≈ S$2.40 for over-65s, open 09:30 to 17:00 with last entry at 16:00.",
-            "Shinobazu Pond and its lotus beds are a flat, easy loop if anyone wants the short version.",
+            "About 25 minutes. Nippori, not Ueno, is the way into Yanaka — the west exit comes out at the top of the Yūyake Dandan steps and the shotengai starts at the bottom.",
           ],
         },
         {
           slot: "Morning",
-          name: "Tokyo National Museum",
-          place: "ChIJEX3XFIOOGGAR3XdJvRjWLyM",
-          jp: "東京国立博物館",
-          dish: "The oldest and largest museum in Japan",
+          time: "10:15",
+          name: "Yanaka",
           status: "walkin",
+          dish: "Old Tokyo — a shotengai and cemetery lanes",
           notes: [
-            "Open 09:30 to 17:00 on Thursdays. Closed Mondays, which is why it could never have been the Monday.",
-            "Around ¥1,000 ≈ S$8. Two hours does it justice; one hour covers the Honkan, which is the main building and the best of it.",
-            "The National Museum of Nature and Science and the National Museum of Western Art are both a few minutes away if anyone wants a different one.",
+            "Yanaka Ginza is a street of croquette and menchi-katsu stalls, the one bit of low-rise pre-war Tokyo left in easy reach.",
+            "Flat and small. An hour and a half covers it comfortably.",
+            "Snacks here are the point — go easy, Izuei is an hour away.",
           ],
         },
         {
           slot: "Lunch",
-          time: "Arrive 12:00",
+          time: "12:15",
           name: "Izuei Honten",
           place: "ChIJDz-xgyCMGGARTTlkSDiqvr8",
           jp: "伊豆栄 本店",
           dish: "Unagi — grilled freshwater eel",
           status: "walkin",
-          where: "Beside Shinobazu Pond, in the park",
+          where: "Beside Shinobazu Pond, Ueno. One stop back down the JR from Nippori",
           tel: "03-3831-0954",
           notes: [
             "Three hundred years old, several floors, English menus. Around ¥4,000 ≈ S$32 for lunch.",
@@ -510,11 +506,25 @@ const TRIP = {
           },
         },
         {
+          slot: "Afternoon",
+          time: "13:45",
+          name: "Ueno Park",
+          place: "ChIJw2qQRZuOGGARWmROEiM2y7E",
+          jp: "上野恩賜公園",
+          dish: "The pond loop, on the way back to the station",
+          status: "walkin",
+          notes: [
+            "Flat and easy, and it points at Ueno station rather than away from it.",
+            "Ueno Zoo is here if anyone wants it — ¥600 ≈ S$4.85, ¥300 ≈ S$2.40 for over-65s, last entry 16:00.",
+            "The Tokyo National Museum is also here, but two hours does it justice and we won't have two hours. Leave it.",
+          ],
+        },
+        {
           slot: "Rest",
-          time: "14:30 – 16:30",
+          time: "14:45 – 16:45",
           name: "Back to the hotel",
           status: "free",
-          notes: ["Roppongi is ten minutes from the door on the Hibiya line, so there is no rush."],
+          notes: ["Hibiya line straight home from Ueno. Roppongi is ten minutes from the door later."],
         },
         {
           slot: "Evening",
@@ -530,38 +540,53 @@ const TRIP = {
             "Blue-white lights the length of the slope with Tokyo Tower framed at the bottom — that view is the reason people come.",
             "Weekday evenings are much calmer than weekends, and it is still early in the season.",
           ],
-          why: "The only major illumination already running while we're here. Tokyo Midtown doesn't start until 26 November and Omotesando not until December.",
           fallback: {
             label: "Dinner after",
-            text: "Nothing booked. Roppongi Hills itself is full of places, or come back down the Hibiya line and eat in Ginza.",
+            text: "Nothing booked. Roppongi Hills is full of places, or come back down the Hibiya line and eat in Ginza.",
           },
         },
       ],
     },
 
     /* ── FRIDAY ───────────────────────────────────────────────
-       Bird Land at 18:00 is the only fixed point left. The
-       daytime is deliberately light.
+       teamLab is off and Yanaka moved to Thursday, so the
+       daytime is genuinely open. Bird Land at 18:00 is the only
+       fixed point left in the week.
        ──────────────────────────────────────────────────────── */
     {
       dow: "Friday",
       date: "13",
       month: "Nov",
-      area: "Yanaka, then Ginza",
-      aside: "The last full day, and the loosest. One booking at 18:00 and a six-minute walk home from it.",
+      area: "Open, then Ginza",
+      aside: "The last full day and deliberately empty. One booking at 18:00 and a six-minute walk home from it.",
       meals: [
         {
           slot: "Morning",
-          name: "Yanaka",
-          status: "walkin",
-          where: "Chiyoda line to Nezu, or a twenty-minute walk north from Ueno",
+          name: "Nothing planned",
+          status: "free",
           notes: [
-            "Old narrow streets and Yanaka Ginza, a shotengai of croquette and menchi-katsu stalls — the one bit of low-rise, pre-war Tokyo left in easy reach.",
-            "Flat and short. An hour or two covers it.",
+            "Ginza is on the doorstep for anything still unbought — and the tax-free refund now happens at the airport, so Saturday's purchases work the same way.",
+            "Toyosu and teamLab were the other candidate for this morning and are no longer happening.",
           ],
+        },
+        {
+          slot: "Lunch",
+          name: "Sushi — the one thing missing from the week",
+          place: "ChIJVVXlVe-LGGARYiyj90sLc3g",
+          dish: "Sushi no Midori, Ginza — if we want the value option",
+          status: "tbc",
+          where: "Ginza 7-chome, under the expressway",
+          tel: "03-5568-1212",
+          notes: [
+            "Open 11:00 to 14:00. Price level is the lowest of any sushi counter in Ginza and the portions are famously oversized — the whole-anago nigiri is the signature.",
+            "The catch is the queue: 60 to 90 minutes if we turn up at noon. Arriving at 11:00 opening is the entire trick, same as Izuei.",
+            "Some recent reviews say the cuts have got smaller than they used to be. Still good value, no longer a revelation.",
+          ],
+          why: "Across the whole week we eat sukiyaki, tempura, tonkatsu, shirasu, unagi and yakitori — and no sushi at a counter. Saturday's Tsukiji is grazing, not the same thing.",
           fallback: {
-            label: "Or keep the morning free",
-            text: "Nothing here is load-bearing. If everyone would rather have a slow start before the last dinner, that is a perfectly good use of the day — or this is where Toyosu and teamLab Planets would go if we still want them.",
+            label: "Or book rather than queue",
+            text:
+              "Ginza Sushi Sakura rates 5.0 across 787 reviews and the chefs work in English, but it's a reservation place and a different price bracket. Ginza Sushi Roku, inside the Courtyard Marriott, is reservation-only too and reviewers rate its lunch as the best value in the area. Either needs a phone call today.",
           },
         },
         {
@@ -590,7 +615,7 @@ const TRIP = {
           why: "The last proper dinner of the trip, and a six-minute walk home afterwards.",
           fallback: {
             label: "Lights afterwards, if anyone has the legs",
-            text: "The Marunouchi illumination switches on 12 November and runs the length of Naka-dori — about ten minutes' walk from the restaurant, and on the way to nothing, which is rather the charm of it.",
+            text: "The Marunouchi illumination runs the length of Naka-dori — about ten minutes' walk from the restaurant, and on the way to nothing, which is rather the charm of it.",
           },
         },
       ],
